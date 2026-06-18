@@ -1,0 +1,10 @@
+# Core: the recorder, detectors, verifier and router are stdlib-only.
+rich==13.7.1            # pretty CLI post-mortem (degrades gracefully if absent)
+
+# Dev:
+pytest==9.0.3          # test suite
+
+# Optional — live NIM/Nemotron backend only (Ollama backend uses stdlib urllib):
+openai==2.41.0         # NIM via https://integrate.api.nvidia.com/v1 (needs NIM_API_KEY)
+
+# External (not pip): Fast Downward at ~/fast_downward/fast-downward.py
