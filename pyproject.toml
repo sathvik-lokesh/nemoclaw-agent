@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nemoclaw-agent"
+version = "0.1.0"
+description = "A reliability layer for multi-agent systems: flight recorder, coordination-failure detectors, and a Fast Downward plan verifier."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Sathvik Lokesh" }]
+keywords = ["multi-agent", "agentic-ai", "reliability", "formal-verification", "pddl", "nvidia"]
+dependencies = ["rich==13.7.1"]
+
+[project.optional-dependencies]
+nim = ["openai==2.41.0"]   # only needed for the live NIM/Nemotron backend
+dev = ["pytest==9.0.3"]
+
+[tool.setuptools]
+packages = ["src", "src.agents", "src.detectors", "src.verifier", "src.adapters"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
