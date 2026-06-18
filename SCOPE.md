@@ -24,10 +24,10 @@ with **Fast Downward** before execution, blocking goals that are provably unreac
 - **Targets the named gap.** Coordination failures / error propagation / correlated failures /
   execution-trace analysis are exactly what the field admits it has no good answer for.
 - **A layer, not a framework.** It wraps existing agents (mirrors how NVIDIA's NeMo Agent
-  Toolkit onboards existing LangGraph agents) instead of competing with them — less work,
-  better story.
-- **On-brand by name.** Real NemoClaw = "orchestration + policy-enforcement layer." This is an
-  open implementation of that category, a current and credible interview talking point.
+  Toolkit onboards existing LangGraph agents) instead of competing with them — less to
+  integrate, and it applies to agent stacks already in use.
+- **Same category as NemoClaw.** Real NemoClaw = "orchestration + policy-enforcement layer."
+  This is an open implementation of that category.
 
 ## Architecture
 
