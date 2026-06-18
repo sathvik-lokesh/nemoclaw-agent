@@ -6,3 +6,10 @@ results/*.html
 sas_plan
 output.sas
 .pytest_cache/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
